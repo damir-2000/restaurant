@@ -472,7 +472,7 @@ class Slider {
          
         function startMove(e) {
             if (context.settings.swipe) {
-                
+                clearInterval(context.timer);
                 context.selector.track.style.transition = `0ms`;
                 context.selector.slider.style.cursor = 'grabbing';
                 positionY = e.type == 'mousedown' ? false : e.changedTouches[0].clientY;
@@ -492,13 +492,13 @@ class Slider {
             moveDistance = context.var.trackPosition - (StartPosition - (context.settings.verticalSlider ? (e.clientY || e.changedTouches[0].clientY):(e.clientX || e.changedTouches[0].clientX)));
             context.trackMove(moveDistance);
             
-            if (positionY && (!context.settings.verticalSlider && Math.abs(positionY - e.changedTouches[0].clientY) > 20)) {
+            if (positionY && (!context.settings.verticalSlider && Math.abs(positionY - e.changedTouches[0].clientY) > 60)) {
                 context.selector.slider.removeEventListener('touchmove', move);
             }
         }
         function endMove(e) {
             EndPosition = (context.settings.verticalSlider ? (e.clientY || e.changedTouches[0].clientY):(e.clientX || e.changedTouches[0].clientX));
-            
+            console.log(e.type);
             context.selector.slider.removeEventListener('mousemove', move);
             context.selector.slider.removeEventListener('mouseup', endMove);
             context.selector.slider.removeEventListener('mouseleave', endMove);
@@ -508,18 +508,20 @@ class Slider {
              
             context.selector.track.style.transition = `${context.settings.slideSpeed}ms`;
             
-            if ((StartPosition - EndPosition) > (context.settings.verticalSlider ? context.var.slideHeight : context.var.slideWidth) / 3) {
+            if ((StartPosition - EndPosition) > (context.settings.verticalSlider ? context.var.slideHeight : context.var.slideWidth) / 5) {
                 context.next();
             }
             else{
                 context.trackMove(context.var.trackPosition);
+               
             }
             
-            if ((StartPosition - EndPosition) < - (context.settings.verticalSlider ? context.var.slideHeight : context.var.slideWidth) / 3) {
+            if ((StartPosition - EndPosition) < - (context.settings.verticalSlider ? context.var.slideHeight : context.var.slideWidth) / 5) {
                 context.prev();
             }
             else{
                 context.trackMove(context.var.trackPosition);
+                
             }
             context.selector.slider.style.cursor = 'grab';
         }

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="container-custom nav__container"><a class="nav__logo" href="">expice </a>
+          <div class="nav__sidebar-wrapper">
+            <ul class="nav__menu">
+              <li class="nav__menu-item"><a class="nav__menu-link" href="">Menu One</a></li>
+              <li class="nav__menu-item"><a class="nav__menu-link" href="">Menu Two</a></li>
+              <li class="nav__menu-item"><a class="nav__menu-link" href="">Menu Three</a></li>
+              <li class="nav__menu-item"><a class="nav__menu-link" href="">Menu Four</a></li>
+            </ul>
+            <div class="nav__user-menu"><span class="nav__user-menu-avatar nav__user-menu-avatar_active"><i class="icon-user nav__user-menu-avatar-icon"></i></span>
+              <button class="nav__user-menu-button"> user<i class="icon-arrow-bottom nav__user-menu-button-icon"></i></button>
+              <ul class="nav__user-menu-list">
+                <li class="nav__user-menu-list-func"> <span> Theme</span></li>
+                <li class="nav__user-menu-list-func"> 
+                  <button class="theme-color__btn" color="theme_green"> Green</button>
+                </li>
+                <li class="nav__user-menu-list-func"> 
+                  <button class="theme-color__btn" color="theme_red"> Red</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="nav__burger"><span class="nav__burger-line"></span><span class="nav__burger-line"></span><span class="nav__burger-line"></span><span class="nav__burger-line"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <section class="discover">
+      <div class="discover__background"></div>
+      <div class="container-custom discover__container">
+        <div class="row discover__row">
+          <div class="discover__left-col col-xl-6 col-lg-6">
+            <p class="discover__top-title">Food</p>
+            <h1 class="discover__title">Discover Restaurant & Delicious Food</h1>
+            <form class="discover-search-form" action="">
+              <div class="discover-search-form-wrapper">
+                <input class="discover-search-form__input" type="text" placeholder="search restaurant, food">
+                <button class="discover-search-form__btn">go</button>
+              </div>
+            </form>
+          </div>
+          <div class="discover__right-col col-xl-6 col-lg-6">
+            <div class="discover-slider">
+              <div class="discover-slider__background"> </div>
+              <div class="discover-slider__wrapper">
+                <div class="discover-slider__track"> 
+                  <div class="discover-slider__slide"><img class="discover-slider__slide-img" src="images/content/plate-no-shadow.webp" alt=""></div>
+                  <div class="discover-slider__slide"><img class="discover-slider__slide-img" src="images/content/plate-no-shadow.webp" alt=""></div>
+                  <div class="discover-slider__slide"><img class="discover-slider__slide-img" src="images/content/plate-no-shadow.webp" alt=""></div>
+                  <div class="discover-slider__slide"><img class="discover-slider__slide-img" src="images/content/plate-no-shadow.webp" alt=""></div>
+                  <div class="discover-slider__slide"><img class="discover-slider__slide-img" src="images/content/plate-no-shadow.webp" alt=""></div>
+                  <div class="discover-slider__slide"><img class="discover-slider__slide-img" src="images/content/plate-no-shadow.webp" alt=""></div>
+                  <div class="discover-slider__slide"><img class="discover-slider__slide-img" src="images/content/plate-no-shadow.webp" alt=""></div>
+                  <div class="discover-slider__slide"><img class="discover-slider__slide-img" src="images/content/plate-no-shadow.webp" alt=""></div>
+                  <div class="discover-slider__slide"><img class="discover-slider__slide-img" src="images/content/plate-no-shadow.webp" alt=""></div>
+                  <div class="discover-slider__slide"><img class="discover-slider__slide-img" src="images/content/plate-no-shadow.webp" alt=""></div>
+                </div>
+              </div>
+              <div class="discover-slider__button"> 
+                <button class="discover-slider__button-left"><span class="discover-slider__button-left-circle"></span><i class="icon-carousel-left discover-slider__button-left-icon"></i></button>
+                <button class="discover-slider__button-right"><i class="icon-carousel-right discover-slider__button-right-icon"></i><span class="discover-slider__button-right-circle"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><a class="map-marker" href=""> <i class="icon-map-marker map-marker__icon"> </i><span class="map-marker__text">Rajshahi</span></a>
+    </section>
+    <section class="food"> 
+      <div class="food__container container-custom"> 
+        <div class="food__title-wrapper title-wrapper">
+          <div class="title-wrapper__line"></div>
+          <h2 class="food__title title title-wrapper__title">some top restaurant for dining in or Take away!</h2>
+          <p class="food__sub-title sub-title title-wrapper__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed.</p>
+        </div>
+      </div>
+      <div class="food-slider">
+        <div class="food-slider__stop"></div>
+        <div class="food-slider__wrapper">
+          <div class="food-slider__wrapper-background-left"></div>
+          <div class="food-slider__wrapper-background-right"></div>
+          <div class="food-slider__track">
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-1.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">Fire Water</h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">New Market</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-2.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">The Wonton </h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">Saheb Bazar</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-1.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">Fire Water</h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">New Market</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-2.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">The Wonton </h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">Saheb Bazar</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-1.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">Fire Water</h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">New Market</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-2.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">The Wonton </h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">Saheb Bazar</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-1.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">Fire Water</h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">New Market</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-2.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">The Wonton </h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">Saheb Bazar</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-1.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">Fire Water</h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">New Market</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-2.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">The Wonton </h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">Saheb Bazar</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-1.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">Fire Water</h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">New Market</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+            <div class="food-slider__slide">
+              <div class="food-slider__slide-content">
+                <div class="food-slider__slide-img-wrapper"><img class="food-slider__slide-img" src="images/content/food-2.webp" alt=""></div>
+                <div class="food-slider__slide-info">
+                  <h4 class="food-slider__slide-title">The Wonton </h4>
+                  <p class="food-slider__slide-about">we are all about we are all about to the fullest and all content dining out or in!dining out or in!</p>
+                  <p class="food-slider__slide-address"> <i class="icon-map-marker food-slider__slide-address-icon"></i><span class="food-slider__slide-address-text">Saheb Bazar</span></p><a class="food-slider__slide-link" href="">Book Now </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-slider__buttons">
+          <button class="food-slider__button-right"><i class="icon-chevron-right food-slider__button-right-icon"></i></button>
+          <p class="food-slider__buttons-text">See More</p>
+        </div>
+      </div>
+    </section>
+    <section class="advance">
+      <div class="advance__wrapper">
+        <div class="advance__wrapper-background">
+          <div class="advance__wrapper-background-main"></div>
+          <div class="advance__wrapper-background-left"></div>
+          <div class="advance__wrapper-background-right"></div>
+        </div>
+        <div class="advance__line"></div>
+        <h2 class="advance__title small-title">advance booking</h2>
+        <form class="booking-form" action="">
+          <div class="booking-form__inputs"> 
+            <input class="booking-form__inputs-text" type="text" placeholder="search restrurent">
+            <button class="booking-form__inputs-btn">go</button>
+          </div>
+          <div class="booking-form__settings">
+            <div class="booking-form__settings-date booking-form__settings-wrapper">
+              <p class="booking-form__settings-text">Date<i class="icon-triangle booking-form__icon"></i></p>
+              <div class="booking-form__settings-select"> 
+                <select class="date-select__day">
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select><span class="date-select__line">-</span>
+                <select class="date-select__month">
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select><span class="date-select__line">-</span>
+                <select class="date-select__year"> 
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2030</option>
+                </select>
+              </div>
+            </div>
+            <div class="booking-form__settings-time booking-form__settings-wrapper">
+              <p class="booking-form__settings-text">Time<i class="icon-triangle booking-form__icon"></i></p>
+              <div class="booking-form__settings-select">
+                <select class="time-select__hour"> 
+                  <option value="0">00</option>
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                </select><span class="time-select__dot">. </span>
+                <select class="time-select__minute"> 
+                  <option value="0">00</option>
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                  <option value="32">32</option>
+                  <option value="33">33</option>
+                  <option value="34">34</option>
+                  <option value="35">35</option>
+                  <option value="36">36</option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                  <option value="53">53</option>
+                  <option value="54">54</option>
+                  <option value="55">55</option>
+                  <option value="56">56</option>
+                  <option value="57">57</option>
+                  <option value="58">58</option>
+                  <option value="59">59</option>
+                </select>
+                <select class="time-select__meridiem">
+                  <option>AM</option>
+                  <option>PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="booking-form__settings-people booking-form__settings-wrapper"> 
+              <p class="booking-form__settings-text">Guests<i class="icon-triangle booking-form__icon"></i></p>
+              <div class="booking-form__settings-select"> 
+                <select class="people-count"> 
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10 </option>
+                  <option>11 </option>
+                  <option>12 </option>
+                  <option>13 </option>
+                  <option>14 </option>
+                  <option>15 </option>
+                  <option>16 </option>
+                  <option>17 </option>
+                  <option>18 </option>
+                  <option>19 </option>
+                  <option>20 </option>
+                  <option>21 </option>
+                  <option>22 </option>
+                  <option>23 </option>
+                  <option>24 </option>
+                  <option>25 </option>
+                  <option>26 </option>
+                  <option>27 </option>
+                  <option>28 </option>
+                  <option>29 </option>
+                  <option>30 </option>
+                </select><span class="people-count__text"> People</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div><img class="advance__background-left" src="images/design/salad-2.webp" alt=""><img class="advance__background-right" src="images/design/salad-3.webp" alt="">
+    </section>
+    <section class="services"> 
+      <div class="services__container container-custom">
+        <div class="services__title-wrapper title-wrapper">
+          <div class="title-wrapper__line"></div>
+          <h2 class="title services__title title-wrapper__title">Our Services</h2>
+          <p class="sub-title services__sub-title title-wrapper__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed.</p>
+        </div>
+      </div>
+      <div class="services-about">
+        <div class="services-about__container container-custom">
+          <div class="services-about__col-left">
+            <div class="services-about__col-left-wrapper">
+              <div class="services-about__col-left-wrapper-content">
+                <div class="services-about__block"><i class="icon-eat services-about__block-icon-small"></i></div>
+                <div class="services-about__info services-about__table-info">
+                  <h4 class="services-about__title services-about__title-table">advanced table booking<span class="services-about__title-table-line"></span><span class="services-about__title-table-arrow"></span></h4>
+                  <p class="services-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+              </div>
+            </div>
+            <div class="services-about__col-left-wrapper">
+              <div class="services-about__col-left-wrapper-content">
+                <div class="services-about__info">
+                  <h4 class="services-about__title services-about__title-food">Food For Free 24/7<span class="services-about__title-food-line"></span><span class="services-about__title-food-arrow"></span></h4>
+                  <p class="services-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="services-about__block"> <i class="icon-plate services-about__block-icon-small"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="services-about__col-right">
+            <div class="services-about__col-right-wrapper">
+              <div class="services-about__col-right-wrapper-content"><i class="icon-delivery services-about__icon"></i>
+                <h4 class="services-about__title">free home delivery at your door steps</h4>
+                <p class="services-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <div class="services-about__line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="explore"> 
+      <div class="explore__container container-custom"> 
+        <h2 class="title explore__title">Explore Our Foods</h2>
+        <p class="sub-title explore__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet.</p>
+        <div class="explore_row row"> 
+          <div class="explore__item col-xl-4 col-lg-6 col-md-6">
+            <div class="food-card">
+              <div class="food-card__img-wrapper"><img class="food-card__img" src="./images/content/card-food-1.webp" alt=""></div>
+              <div class="food-card__text">
+                <div class="food-card__title-wrap">
+                  <h5 class="food-card__title">Hand Sandwich</h5>
+                  <p class="food-card__price">$10.25</p>
+                </div>
+                <p class="food-card__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. </p>
+              </div>
+            </div>
+          </div>
+          <div class="explore__item col-xl-4 col-lg-6 col-md-6">
+            <div class="food-card">
+              <div class="food-card__img-wrapper"><img class="food-card__img" src="./images/content/card-food-2.webp" alt=""></div>
+              <div class="food-card__text">
+                <div class="food-card__title-wrap">
+                  <h5 class="food-card__title">Hand Sandwich</h5>
+                  <p class="food-card__price">$10.25</p>
+                </div>
+                <p class="food-card__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. </p>
+              </div>
+            </div>
+          </div>
+          <div class="explore__item col-xl-4 col-lg-6 col-md-6">
+            <div class="food-card">
+              <div class="food-card__img-wrapper"><img class="food-card__img" src="./images/content/card-food-3.webp" alt=""></div>
+              <div class="food-card__text">
+                <div class="food-card__title-wrap">
+                  <h5 class="food-card__title">Hand Sandwich</h5>
+                  <p class="food-card__price">$10.25</p>
+                </div>
+                <p class="food-card__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. </p>
+              </div>
+            </div>
+          </div>
+          <div class="explore__item col-xl-4 col-lg-6 col-md-6">
+            <div class="food-card">
+              <div class="food-card__img-wrapper"><img class="food-card__img" src="./images/content/card-food-4.webp" alt=""></div>
+              <div class="food-card__text">
+                <div class="food-card__title-wrap">
+                  <h5 class="food-card__title">Hand Sandwich</h5>
+                  <p class="food-card__price">$10.25</p>
+                </div>
+                <p class="food-card__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. </p>
+              </div>
+            </div>
+          </div>
+          <div class="explore__item col-xl-4 col-lg-6 col-md-6">
+            <div class="food-card">
+              <div class="food-card__img-wrapper"><img class="food-card__img" src="./images/content/card-food-5.webp" alt=""></div>
+              <div class="food-card__text">
+                <div class="food-card__title-wrap">
+                  <h5 class="food-card__title">Hand Sandwich</h5>
+                  <p class="food-card__price">$10.25</p>
+                </div>
+                <p class="food-card__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. </p>
+              </div>
+            </div>
+          </div>
+          <div class="explore__item col-xl-4 col-lg-6 col-md-6">
+            <div class="food-card">
+              <div class="food-card__img-wrapper"><img class="food-card__img" src="./images/content/card-food-6.webp" alt=""></div>
+              <div class="food-card__text">
+                <div class="food-card__title-wrap">
+                  <h5 class="food-card__title">Hand Sandwich</h5>
+                  <p class="food-card__price">$10.25</p>
+                </div>
+                <p class="food-card__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="app"> 
+      <div class="app__container container-custom"> 
+        <div class="app__row row"> 
+          <div class="app__col-left col-xl-6 col-lg-6"> 
+            <div class="app__title-wrapper title-wrapper">
+              <div class="title-wrapper__line"></div>
+              <h2 class="title app__title title-wrapper__title">Download app for Exciting Deals</h2>
+              <p class="sub-title app__sub-title title-wrapper__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. </p>
+              <div class="app__download-links"><a class="app__download-links-market" href=""> <i class="icon-play-market app__download-links-market-icon"></i><span class="app__download-links-market-text"><span class="app__download-links-market-text-top">GET IT ON</span><span class="app__download-links-market-text-bottom">google Play</span></span></a><a class="app__download-links-market" href=""> <i class="icon-app-store app__download-links-market-icon"></i><span class="app__download-links-market-text"><span class="app__download-links-market-text-top">Download on the</span><span class="app__download-links-market-text-bottom">App Store</span></span></a></div>
+            </div>
+          </div>
+          <div class="app__col-right col-xl-6 col-lg-6"> 
+            <div class="app__img-wrapper">
+              <div class="app__col-right-background"></div><img class="app__img-phone-background" src="images/design/salad-4.webp" alt=""><img class="app__img-phone" src="images/design/phone-no-shadow.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"> 
+      <div class="footer__background"><img class="footer__background-img" src="images/design/grass.webp" alt=""></div>
+      <div class="footer__container container-custom"> 
+        <h2 class="small-title footer__title"> 
+          <p class="footer__title-p">Get notified</p>
+          <p class="footer__title-p">about new amazing products</p>
+        </h2>
+        <p class="sub-title footer__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. </p>
+        <form class="footer-form-email" action="">
+          <div class="footer-form-email__wrapper">
+            <input class="footer-form-email__input" type="text" placeholder="E-mail">
+            <button class="footer-form-email__btn"><i class="icon-arrow-right footer-form-email__btn-icon"></i></button>
+          </div>
+        </form>
+        <ul class="footer-nav">
+          <li class="footer-nav__item"><a class="footer-nav__link" href="">Product</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="">Company</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="">Learn more</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="">Get in touch</a></li>
+        </ul>
+        <div class="footer__sociaty-copy">
+          <div class="footer-sociaty"><a class="footer-sociaty__link" href=""><i class="icon-facebook footer-sociaty__link-icon"></i></a><a class="footer-sociaty__link" href=""><i class="icon-twitter footer-sociaty__link-icon"></i></a><a class="footer-sociaty__link" href=""><i class="icon-Linkedin footer-sociaty__link-icon"></i></a><a class="footer-sociaty__link" href=""><i class="icon-Behance footer-sociaty__link-icon"></i></a></div>
+          <p class="footer__copy">© 2020 <a href="">Expice Studio</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="script/main.min.js"> </script>
+  </body>
+</html>

@@ -380,7 +380,7 @@ class Slider {
          
         function startMove(e) {
             if (context.settings.swipe) {
-                console.log(e.type);
+                
                 context.selector.track.style.transition = `0ms`;
                 context.selector.slider.style.cursor = 'grabbing';
                 positionY = e.type == 'mousedown' ? false : e.changedTouches[0].clientY;

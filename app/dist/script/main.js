@@ -472,7 +472,7 @@ class Slider {
          
         function startMove(e) {
             if (context.settings.swipe) {
-                console.log(e.type);
+                
                 context.selector.track.style.transition = `0ms`;
                 context.selector.slider.style.cursor = 'grabbing';
                 positionY = e.type == 'mousedown' ? false : e.changedTouches[0].clientY;
@@ -615,8 +615,5 @@ dateView.minutes.options[date.minutes].selected = true;
 dateView.meridiem.options[date.hours > 11 ? 1 : 0].selected = true;
 
 
-
-
-console.log(date.day, date.month , date.year, date.hours, date.minutes);
 
 }, false);

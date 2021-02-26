@@ -24,6 +24,3 @@ dateView.minutes.options[date.minutes].selected = true;
 dateView.meridiem.options[date.hours > 11 ? 1 : 0].selected = true;
 
 
-
-
-console.log(date.day, date.month , date.year, date.hours, date.minutes);

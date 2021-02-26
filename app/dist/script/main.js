@@ -565,7 +565,7 @@ const foodSlider = new Slider ({
     },
     settings:{
         infinity: true,
-        slideSpeed: 700,
+        slideSpeed: 500,
         slideToShow: 2,
         autoPlay: true,
         autoPlaySpeed: 3000,

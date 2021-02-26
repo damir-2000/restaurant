@@ -508,7 +508,7 @@ class Slider {
              
             context.selector.track.style.transition = `${context.settings.slideSpeed}ms`;
             
-            if ((StartPosition - EndPosition) > (context.settings.verticalSlider ? context.var.slideHeight : context.var.slideWidth) / 5) {
+            if ((StartPosition - EndPosition) > (context.settings.verticalSlider ? context.var.slideHeight : context.var.slideWidth) / 6) {
                 context.next();
             }
             else{
@@ -516,7 +516,7 @@ class Slider {
                
             }
             
-            if ((StartPosition - EndPosition) < - (context.settings.verticalSlider ? context.var.slideHeight : context.var.slideWidth) / 5) {
+            if ((StartPosition - EndPosition) < - (context.settings.verticalSlider ? context.var.slideHeight : context.var.slideWidth) / 6) {
                 context.prev();
             }
             else{

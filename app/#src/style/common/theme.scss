@@ -1,0 +1,15 @@
+.theme_red{
+    --main-color-hex: #{$red-hex};
+    --main-color-rgb: #{$red-rgb};
+    
+    --secondary-color-hex: #{$green-hex};
+    --secondary-color-rgb: #{$green-rgb};
+}
+.theme_green{
+    --main-color-hex: #{$green-hex};
+    --main-color-rgb: #{$green-rgb};
+    
+    --secondary-color-hex: #{$red-hex};
+    --secondary-color-rgb: #{$red-rgb};
+}
+

@@ -1,0 +1,312 @@
+.advance{
+    padding: 265px 0;
+    position: relative;
+    background: $peach;
+    overflow: hidden;
+    @include media(1600px){
+        padding: 200px 0 125px;
+    }
+    @include respond(notebook){
+        padding: 120px 0 90px;
+    }
+    
+    @include respond(mobile){
+        padding: 80px 0 80px;
+    }
+    
+    &__wrapper{
+        position: relative;
+        padding: 100px 0 120px;
+        text-align: center;
+        z-index: 1;
+        
+        @include respond(desktop){
+            padding: 40px 0 35px;
+        }
+        @include respond(notebook){
+            padding: 30px 0 25px;
+        }
+        &-background{
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 79%;
+            z-index: -1;
+            @include respond(notebook){
+                width: 85%;
+            }
+            @include media(450px){
+                width: 100%;
+            }
+            &-main{
+                top: 0;
+                left: 0;
+                position: absolute;
+                background: $white;
+                height: 100%;
+                width: 100%;
+                
+            }
+            &-left, &-right{
+                z-index: -1;
+                position: absolute;
+                background: url('../images/design/dotted-middle.webp');
+                height: 365px;
+                max-width: 316px;
+                width: 100%;
+                @include respond(mobile){
+                    background: url('../images/design/dotted-middle-mobile.webp');
+                }
+                @include media(450px){
+                    height: 210px;
+                }
+            }
+            
+            &-left{
+                left:300px;
+                bottom: -70px;
+                @include respond(desktop){
+                    left: -40px;
+                }
+                @include respond(mobile){
+                    left: -40px;
+                    bottom: -55px;
+                }
+
+            }
+            &-right{
+                right: -70px;
+                top: -70px;
+                @include respond(mobile){
+                    right: -70px;
+                    top: -55px;
+                }
+
+            }
+        }
+    }
+    &__background-left{
+        position: absolute;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        @include media(1600px){
+            transform: translateX(-20%);
+        }
+        @include respond(desktop){
+            transform: translateX(-30%);
+        }
+        @include respond(notebook){
+            transform: translateX(-40%);
+        }
+        @include respond(mobile){
+            transform: translateX(-50%);
+        }
+        @include media(450px){
+            display: none;
+        }
+    } 
+    &__background-right{
+        position: absolute;
+        height: 57%;
+        right: 0;
+        top: 50%;
+        transform: translate3d(0,-50%,0);
+        z-index: 100;
+        @include respond(notebook){
+            transform: translate3d(15%,-50%,0);
+        }
+        @include respond(mobile){
+            transform: translate3d(20%,-20%,0);
+        }
+        @include media(450px){
+            display: none;
+        }
+    }
+    
+    &__line{
+        width: 230px;
+        height: 15px;
+        margin: 0 auto 30px;
+        background: var(--main-color-hex);
+        @include respond(desktop){
+            margin-bottom: 20px;
+        }
+        @include respond(mobile){
+            width: 150px;
+            height: 10px;
+        }
+    }
+    &__title{
+        
+        margin-bottom: 60px;
+        @include respond(notebook){
+            margin-bottom: 40px;
+        }
+    } 
+}
+
+.booking-form{
+    padding: 0 130px;
+    @include respond(notebook){
+        padding: 0 100px;
+    }
+    @include respond(tablet){
+        padding: 0 80px;
+    }
+    @include respond(mobile){
+        padding: 0 30px;
+    }
+    @include media(450px){
+        padding: 0 10px; 
+    }
+    &__inputs{
+        padding: 14px;
+        box-shadow: 2px 2px 30px 2px #FFF5EC;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 544px;
+        margin: 0 auto 60px;
+        @include respond(notebook){
+            max-width: 400px;
+            padding: 7px;
+        }
+        @include respond(notebook){
+            max-width: 280px;
+            padding: 5px;
+        }
+        @include media(450px){
+            margin-bottom: 30px;
+        }
+        &-text{
+            flex: 1;
+            padding: 22px 26px;
+            outline: none;
+            border: none;
+            background: none;
+            font-size: 16px;
+            text-transform: lowercase;
+            color: $blue;
+            @include respond(notebook){
+                padding: 15px 7px;
+                font-size: 15px;
+            }
+            @include respond(mobile){
+                padding: 10px 5px;
+                font-size: 14px;
+            }
+           
+        }
+        &-text::placeholder{
+            color: $blue;
+            opacity: 0.6;
+            
+        }
+        &-btn{
+            border: none;
+            outline: none;
+            background: var(--main-color-hex);
+            padding: 14px 39px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 30px;
+            color: $white;
+            transition: 0.4s;
+            cursor: pointer;
+            &:hover{
+              background: var(--secondary-color-hex);  
+            }
+            @include respond(notebook){
+                padding: 12px 30px;
+                font-size: 26px;
+            }
+            @include respond(mobile){
+                padding: 9px 20px;
+                font-size: 24px;
+            }
+        }
+        
+    }
+    &__icon{
+        font-size: 7px;
+        margin-left: 5px;
+        color: var(--main-color-hex);
+    }
+    
+    &__settings{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        &-wrapper{
+            margin: 0 35px;
+            @include respond(notebook){
+                margin: 0 25px;
+            } 
+            @include respond(mobile){
+                margin: 0 10px;
+            } 
+        }
+        
+        &-text{
+            font-size: 16px;
+            line-height: 19px;
+            color: $blue;
+            margin-bottom: 10px;
+            @include media(450px){
+                font-size: 15px;
+                line-height: 18px;
+                margin-bottom: 5px;
+            }
+        }
+
+        &-select{
+            .date-select__day, .date-select__month, .date-select__year,
+            .time-select__hour, .time-select__minute, .time-select__meridiem,
+            .people-count, .people-count__text{
+                border: none;
+                outline: none;
+                background: none;
+                font-size: 16px;
+                line-height: 30px;
+                text-transform: capitalize;
+                color: $blue;
+                opacity: 0.6;
+                @include media(450px){
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                cursor: pointer;
+                option{
+                    background: $pink;
+                    font-size: 16px;
+                    color: $blue;
+                    opacity: 0.6;
+                       
+                }
+            }
+            .date-select__month, .date-select__year,
+            .time-select__minute
+            {
+                margin-left: -5px;
+            }
+            .date-select__line, 
+            .time-select__dot
+            {
+                line-height: 20px;
+                color: $blue;
+                opacity: 0.6;
+                
+            }
+            .people-count__text{
+                cursor: unset;
+            }
+
+        }
+              
+    }
+}

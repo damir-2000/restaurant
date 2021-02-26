@@ -1,0 +1,83 @@
+section.advance
+    .advance__wrapper
+        .advance__wrapper-background
+            .advance__wrapper-background-main
+            .advance__wrapper-background-left
+            .advance__wrapper-background-right
+            
+        .advance__line
+        h2.advance__title.small-title advance booking
+        
+        form(action="").booking-form
+            .booking-form__inputs 
+                input(type="text" placeholder="search restrurent").booking-form__inputs-text
+                button.booking-form__inputs-btn go
+                
+            .booking-form__settings
+                .booking-form__settings-date.booking-form__settings-wrapper
+                    p.booking-form__settings-text Date
+                        i.icon-triangle.booking-form__icon
+                    .booking-form__settings-select 
+                        select.date-select__day
+                            -for(var x = 1; x <= 31; x++)
+                                -if(x<10)
+                                    option(value = x) 0#{x}
+                                -else
+                                    option(value = x) #{x}
+                                
+                        span.date-select__line -
+                        select.date-select__month
+                            -for(var x = 1; x <= 12; x++)
+                                -if(x<10)
+                                    option(value = x) 0#{x}
+                                -else
+                                    option(value = x) #{x}
+                            
+                        span.date-select__line -
+                        select.date-select__year 
+                            -for(var x = 2020; x <= 2030; x++)
+                                    option(value = x) #{x}
+                            
+                    
+                .booking-form__settings-time.booking-form__settings-wrapper
+                    p.booking-form__settings-text Time
+                        i.icon-triangle.booking-form__icon
+                    .booking-form__settings-select
+                        select.time-select__hour 
+                             -for(var x = 0; x < 12; x++)
+                                -if(x<10)
+                                    option(value = x) 0#{x}
+                                -else
+                                    option(value = x) #{x}
+                                    
+                        span.time-select__dot . 
+                        
+                        select.time-select__minute 
+                             -for(var x = 0; x <= 59; x++)
+                                -if(x<10)
+                                    option(value = x) 0#{x}
+                                -else
+                                    option(value = x) #{x}
+                                    
+                        select.time-select__meridiem
+                            option AM
+                            option PM
+                    
+                .booking-form__settings-people.booking-form__settings-wrapper 
+                    p.booking-form__settings-text Guests
+                        i.icon-triangle.booking-form__icon
+                    .booking-form__settings-select 
+                        select.people-count 
+                            -for(var x = 1; x <= 30; x++)
+                                    -if(x<10)
+                                        option 0#{x}
+                                    -else
+                                        option #{x} 
+                            
+                        span.people-count__text  People
+                    
+        
+        
+    img(src="images/design/salad-2.webp", alt="").advance__background-left    
+    img(src="images/design/salad-3.webp", alt="").advance__background-right
+    

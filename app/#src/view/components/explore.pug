@@ -1,0 +1,22 @@
+section.explore 
+    .explore__container.container-custom 
+        h2.title.explore__title Explore Our Foods
+        p.sub-title.explore__sub-title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet.
+        
+        
+        -var img = ["./images/content/card-food-1.webp", "./images/content/card-food-2.webp", "./images/content/card-food-3.webp", "./images/content/card-food-4.webp", "./images/content/card-food-5.webp", "./images/content/card-food-6.webp"]
+        
+        .explore_row.row 
+            -for(var x = 0; x < 6; x++)
+                .explore__item.col-xl-4.col-lg-6.col-md-6
+                
+                    .food-card
+                        .food-card__img-wrapper
+                            img(src=img[x], alt="").food-card__img
+                            
+                        .food-card__text
+                            .food-card__title-wrap
+                                h5.food-card__title Hand Sandwich
+                                p.food-card__price $10.25
+                            p.food-card__about Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing. 
+                        

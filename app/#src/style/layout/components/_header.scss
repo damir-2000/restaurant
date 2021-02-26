@@ -1,0 +1,330 @@
+.inactive{
+    @include respond(mobile){
+        overflow: hidden;
+    } 
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 990;
+    padding: 50px 0;
+    
+    &_active{
+        padding: 20px;
+        background: var(--main-color-hex);
+        .nav{
+            &__logo{
+                color: $white;
+            }
+            
+            &__menu-link{
+                color: $white;
+            }
+        }
+        
+        
+        
+    }
+    
+    @include respond(desktop){
+        padding: 30px 0;
+        overflow: hidden;
+        
+    }
+    @include respond(mobile){
+        padding: 15px 0;
+        overflow: hidden;
+        
+    }
+    
+}
+
+.nav{
+    width: 100%;
+  
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_active{
+
+        
+        .nav__logo{
+            @include respond(mobile){
+                
+                color: $white;
+                z-index: 10;
+            }
+        }
+    }
+    &__logo{
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 40px;
+        color: var(--main-color-hex);
+        transition: 0.4s;
+        @include respond(desktop){
+            font-size: 60px;
+        }
+        @include respond(mobile){
+            font-size: 48px;
+            
+            z-index: 10;
+        }
+    }
+    &__sidebar-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        padding-left: 200px;
+        @include respond(desktop){
+            justify-content: flex-start;
+            background: rgba(var(--main-color-rgb), 0.9);
+            padding: 100px 0px;
+            position: fixed;
+            right: -100%;
+            top: 0;
+            height: 100vh;
+            width: 200px;
+            flex-direction: column;
+            transition: 0.5s;
+            &_active{
+                right: 0;
+            }
+        }
+        @include respond(mobile){
+            width: 100%;
+            padding: 80px 0;
+            background: rgba(var(--main-color-rgb), 1);
+        }
+    }
+    
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include respond(desktop){
+            flex-direction: column;
+            order: 2;
+            padding: 10px 0;
+            width: 100%;
+            // background: rgba(236, 236, 236, 0.746);
+        }
+        
+        @include respond(mobile){
+            align-items: center;
+        }
+        &-item{
+            margin: 0 20px;
+            
+            @include respond(desktop){
+                width: 100%;
+                // background: rgba(236, 236, 236, 0.5);
+                margin: 1px 0;
+                padding: 0 20px;
+            }
+            @include respond(mobile){
+                text-align: center;
+                margin: 5px 0;
+            }
+        }
+        &-link{
+            font-size: 16px;
+            color: $blue;
+            transition: 0.4s;
+            @include respond(desktop){
+                color: $white !important;
+            }
+            @include respond(mobile){
+                font-size: 20px;
+            }
+            &:hover{
+                color: var(--secondary-color-hex);
+            }
+            
+        }
+        
+    }
+    &__user-menu{
+        position: relative;
+        display: flex;
+        align-items: center;
+        @include respond(desktop){
+            order: 1;
+            width: 100%;
+            flex-direction: column;
+            
+        }
+        &-avatar{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: $white;
+            margin-right: 9px;
+            @include respond(desktop){
+                margin-bottom: 10px;
+            }
+            &_active::before{
+                content:'';
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: $d-green;
+                position: absolute;
+                top: 0;
+                right: 0;
+                
+            }
+            &-icon{
+                color: $blue;
+                font-size: 30px;
+            }
+        }
+        
+        &-button{
+            font-size: 16px;
+            line-height: 24px;
+            color: $white;
+            background: none;
+            border: none;
+            cursor: pointer;
+            &-icon{
+                font-size: 7px;
+                margin-left: 7px;
+                @include respond(mobile){
+                    font-size: 10px;
+                }
+            } 
+            @include respond(mobile){
+                font-size: 20px;
+            }
+        }
+        &-list{
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0px;
+            transform: translate3d(40%,0,0);
+            background: rgba(236, 236, 236, 0.746);
+            @include respond(desktop){
+                position: relative;
+                transform: translate3d(0%,0,0);
+                top: 0;
+                width: 100%;
+                margin-top: 10px;
+                overflow: hidden;
+                background: rgba(236, 236, 236, 0.746);
+                padding: 10px;
+                
+            }
+            
+            &_active{
+               display: block;
+            }
+            
+            &-func{
+                
+                border:1px solid rgba(236, 236, 236, 1);
+                padding: 5px;
+                @include respond(desktop){
+                    border:none;
+                    margin-top: 1px;
+                }
+                span{
+                    @include respond(mobile){
+                        display: inline-block;
+                        width: 100%;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                    
+                }
+                .theme-color__btn{
+                    cursor: pointer;
+                    width: 100%;
+                    border: none;
+                    color: $white;
+                    border-radius: 2px;
+                    padding: 2px;
+                    @include respond(desktop){
+                        padding: 10px;
+                        font-size: 18px;
+                    }
+                    &[color = "theme_red"] {
+                        background: $red-hex;
+                    }
+                    &[color = "theme_green"] {
+                        background: $green-hex;
+                    }
+                }
+                
+            }
+        }
+    }
+    &__burger{
+        /* display: none; */
+        height: 20px;
+        width: 40px;
+        border: none;
+        background: none;
+        position: relative;
+        display: none;
+        @include respond(desktop){
+            display: block;
+        }
+        @include respond(mobile){
+            height: 25px;
+            width: 23px;
+        }
+        &-line{
+            position: absolute;
+            right: 0;
+            display: block;
+            width: 100%;
+            height: 2.5px;
+            background: $white;
+            transition: 0.4s;
+            &:nth-child(1){
+                left: 0;
+                top: 0;
+            }
+            &:nth-child(2), &:nth-child(3){
+                top: 50%;
+            }
+            &:nth-child(4){
+                top: 100%;
+                width: 15.5px;
+            }
+            
+        
+        }
+        &_active{
+            .nav__burger-line{
+                &:nth-child(1){
+                    left: -100%;
+                    opacity: 0;
+                }
+                &:nth-child(2){
+                    transform: rotate(45deg);
+                }
+               &:nth-child(3){
+                transform: rotate(-45deg);
+                }
+                &:nth-child(4){
+                    right: -100%;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    
+}

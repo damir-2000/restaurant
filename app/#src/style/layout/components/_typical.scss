@@ -1,0 +1,112 @@
+
+.container-custom{
+    max-width: 1650px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include respond(desktop){
+        max-width: 1110px;
+    }
+    @include respond(notebook){
+        max-width: 910px;
+    }
+}
+
+.title{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62px;
+    color: $blue;
+    text-transform: capitalize;
+    @include respond(mobile){
+        font-size: 36px;
+        line-height: 48px;
+    }
+    @include media(400px){
+        font-size: 29px;
+        line-height: 40px;
+    }
+}
+.small-title{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    color: $blue;
+    text-transform: capitalize;
+    
+    @include respond(mobile){
+        font-size: 24px;
+        line-height: 32px;
+    }
+    @include media(400px){
+        font-size: 24px;
+        line-height: 25px;
+    }
+}
+.sub-title{
+    
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 24px;
+    color: $gray;
+    
+    @include media(400px){
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.title-wrapper{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 55px;
+    position: relative;
+    border-color: var(--main-color-hex);
+   
+    @include respond(notebook){
+        flex-wrap: wrap;
+    }
+    
+    
+    @include respond(mobile){
+        
+        padding-left: 32px;
+        padding-right: 15px;
+    }
+    @include media(400px){
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    &__line{
+        height: 140px;
+        width: 25px;
+        background: var(--main-color-hex);
+        position: absolute;
+        top: -5px;
+        left: 0;
+        @include respond(mobile){
+            height: 100px;
+            width: 12px;
+            top: 0px;
+        }
+        @include media(400px){
+            height: 90px;
+        }
+    }
+    &__title{
+        margin-right: 170px;
+        @include respond(desktop){
+            margin-right: 40px;
+        }
+        @include respond(notebook){
+            margin-right: 0px;
+            margin-bottom: 30px;
+        }
+    }
+    &__sub-title{
+        max-width: 610px;
+    }
+    
+}
+

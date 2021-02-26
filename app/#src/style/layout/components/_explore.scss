@@ -1,0 +1,120 @@
+.explore{
+    padding: 100px 0 90px;
+    @include respond(desktop){
+        padding: 90px 0 40px;
+    }
+    @include respond(mobile){
+        padding: 50px 0 40px;
+    }
+    &__container{
+        
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 30px;
+        @include media(400px){
+            margin-bottom: 10px;
+        }
+    }
+    
+    &__sub-title{
+        text-align: center;
+        margin: 0 auto;
+        max-width: 610px;
+        margin-bottom: 60px;
+        @include respond(mobile){
+            margin-bottom: 30px;
+        }
+        @include media(400px){
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__row{
+        
+    }
+
+    
+}
+
+.food-card{
+    margin-bottom: 60px;
+    background: $white;
+    box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5);
+    border-radius: 25px;
+    overflow: hidden;
+    @include respond(desktop){
+        margin-bottom: 40px;
+    }
+    @include respond(tablet){
+        margin-bottom: 30px;
+    }
+    @include media(400px){
+        margin-bottom: 15px;
+    }
+    &__img-wrapper{
+        width: 100%;
+        position: relative;
+        padding-top: 75.5%;
+    }
+    &__img{
+        position: absolute;
+        top: 0;
+         
+        left: 0;  
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__text{
+        padding: 30px;
+        @include media(400px){
+            padding: 10px 15px;
+        }
+    }
+    
+    &__title-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        @include media(400px){
+            margin-bottom: 10px;
+        }
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: capitalize;
+        color: $blue;
+        @include media(400px){
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    &__price{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: capitalize;
+        color: var(--main-color-hex);
+        @include media(400px){
+            font-size: 18px;
+            line-height: 24px;
+        }
+        
+    }
+    
+    &__about{
+        max-width: 290px;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: $gray;
+        @include media(400px){
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

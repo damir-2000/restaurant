@@ -1,0 +1,34 @@
+-var menuList = ['Menu One', 'Menu Two', 'Menu Three', 'Menu Four']
+
+header.header
+        nav.nav
+            .container-custom.nav__container
+                a.nav__logo(href="") expice 
+                
+                .nav__sidebar-wrapper
+                    ul.nav__menu
+                        each list in menuList
+                            li.nav__menu-item
+                                a.nav__menu-link(href="")= list 
+                                
+                    .nav__user-menu
+                        span.nav__user-menu-avatar.nav__user-menu-avatar_active
+                            i.icon-user.nav__user-menu-avatar-icon
+                            
+                        button.nav__user-menu-button  user
+                            i.icon-arrow-bottom.nav__user-menu-button-icon
+                            
+                        ul.nav__user-menu-list
+                            li.nav__user-menu-list-func 
+                                span  Theme
+                            li.nav__user-menu-list-func 
+                                button.theme-color__btn(color = 'theme_green')  Green
+                            li.nav__user-menu-list-func 
+                                button.theme-color__btn(color = 'theme_red')  Red
+                        
+                        
+                button.nav__burger
+                    -for (var x = 0; x < 4; x++)
+                        span.nav__burger-line
+                         
+                    

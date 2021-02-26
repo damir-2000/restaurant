@@ -1,0 +1,40 @@
+section.discover
+    .discover__background
+    
+    .container-custom.discover__container
+        .row.discover__row
+            .discover__left-col.col-xl-6.col-lg-6
+                p.discover__top-title Food
+                
+                h1.discover__title Discover Restaurant & Delicious Food
+                
+                form.discover-search-form(action="")
+                    .discover-search-form-wrapper
+                        input(type="text" placeholder="search restaurant, food").discover-search-form__input
+                        button.discover-search-form__btn go
+            
+            .discover__right-col.col-xl-6.col-lg-6
+                .discover-slider
+                    .discover-slider__background 
+                    .discover-slider__wrapper
+                        .discover-slider__track 
+                            -for(var i = 0; i < 10; i++)
+                                .discover-slider__slide
+                                    img(src="images/content/plate-no-shadow.webp", alt="").discover-slider__slide-img
+                                
+                            
+                    .discover-slider__button 
+                        button.discover-slider__button-left
+                            span.discover-slider__button-left-circle
+                            i.icon-carousel-left.discover-slider__button-left-icon
+                            
+                        button.discover-slider__button-right
+                            i.icon-carousel-right.discover-slider__button-right-icon
+                            span.discover-slider__button-right-circle
+                
+    a(href="").map-marker 
+        i.icon-map-marker.map-marker__icon 
+        span.map-marker__text Rajshahi
+        
+                    
+                 

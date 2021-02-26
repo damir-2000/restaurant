@@ -1,0 +1,256 @@
+.footer{
+    padding: 270px 0 70px;
+    position: relative;
+    text-align: center;
+    @include respond(desktop){
+        padding: 120px 0 50px;
+    }
+    @include respond(mobile){
+        padding: 60px 0 30px;
+    }
+    @include media(400px){
+        padding: 40px 0 20px;
+    }
+    &__background{
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 90%;
+        width: 39%;
+        background: url('../images/design/dotted-nano.webp');
+        @include respond(desktop){
+            height: 95%;
+            width: 50%;
+        }
+        @include respond(mobile){
+            width: 100%;
+            height: 100%;
+        }
+        &-img{
+            position: absolute;
+            object-fit: cover;
+            height: 105%;
+            left: 0;
+            bottom: 0;
+            @include respond(desktop){
+            left: -18%;
+            }
+            @include respond(tablet){
+            left: -40%;
+            top: -10%;
+            }
+            
+            @include respond(mobile){
+                left: -30%;
+                height: 100%;
+                top: -12%;
+            }
+            @include media(400px){
+                display: none;
+            }
+        }
+    }
+   &__container{
+       
+   } 
+    &__title{
+        max-width: 535px;
+        font-weight: normal;
+        line-height: 48px;
+        margin: 0 auto 30px;
+        &-p{
+            text-transform: capitalize;
+        }
+        @include respond(mobile){
+            max-width: 360px;
+        }
+        @include media(400px){
+            margin-bottom: 20px;
+        }
+    }
+    &__sub-title{
+        max-width: 535px;
+        margin: 0 auto 60px;
+        @include respond(desktop){
+            margin-bottom: 30px;
+        }
+        @include respond(mobile){
+            max-width: 360px;
+        }
+        @include media(400px){
+            margin-bottom: 20px;
+        }
+    }
+    
+    &-form-email{
+        margin: 0 auto;
+        max-width: 544px;
+        height: 90px;
+        margin-bottom: 60px;
+        @include respond(desktop){
+            margin-bottom: 30px;       
+        }
+        @include respond(mobile){
+            height: 60px;
+            max-width: 380px;
+        }
+        @include media(400px){
+            margin-bottom: 20px;
+        }
+        &__wrapper{
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            box-shadow: 2px 2px 30px 2px #FFF5EC;
+            border-radius: 100px;
+            background: $white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px;
+            @include respond(mobile){
+                padding: 0px 8px;
+            }
+            
+        }
+        &__input{
+            border: none;
+            outline: none;
+            background: none;
+            flex: 1;
+            margin-right: 10px;
+            height: 100%;
+            padding-left: 40px;
+            font-size: 16px;
+            line-height: 24px;
+            color: $blue;
+            @include respond(mobile){
+                padding-left: 25px;
+            }
+            &::placeholder{
+                color: $blue;
+                opacity: 0.6;
+            }
+            
+        }
+        &__btn{
+            border: none;
+            outline: none;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--main-color-hex);
+            cursor: pointer;
+            transition: 0.4s;
+            @include respond(mobile){
+                width: 40px;
+                height: 40px;
+
+            }
+            &:hover{
+                background: var(--secondary-color-hex);
+            }
+            &-icon{
+               color: $white;
+               font-size: 17px; 
+               @include respond(mobile){
+                    font-size: 14px; 
+               }
+            }
+        }
+    }    
+    &-nav{
+        margin: 0 auto 180px;
+        max-width: 435px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include respond(desktop){
+            margin-bottom: 45px;
+        }
+        @include respond(mobile){
+            max-width: 360px;
+            justify-content: center;
+            margin-bottom: 26px;
+        }
+        
+        &__item{
+            @include respond(mobile){
+                margin: 2px 2px;
+            }
+            
+            @include media(400px){
+                margin: 2px 12px; 
+            }
+        }
+        &__link{
+            font-size: 16px;
+            line-height: 24px;
+            color: $gray;
+            transition: 0.4s;
+            @include media(400px){
+                font-size: 14px;
+            }
+                &:hover{
+                    color: var(--secondary-color-hex);
+                }
+        }
+    }
+    &__sociaty-copy{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include respond(mobile){
+            justify-content: center;
+        }
+    }
+    &-sociaty{
+        display: flex;
+        align-items: center;
+        margin: 0 40px;
+        @include respond(desktop){
+            margin: 0 30px 0 0;
+        }
+        @include media(400px){
+            margin: 0 10px;
+        }
+        
+        &__link{
+            margin: 0 10px;
+            color: $gray;
+            @include media(400px){
+                margin: 0 5px;
+            }
+            &-icon{
+                font-size: 16px;
+                transition: 0.4s;
+                &:hover{
+                    color: var(--secondary-color-hex);
+                }
+            }
+        }
+    }
+    &__copy{
+        margin: 0 50px;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: $black;
+        @include respond(desktop){
+            margin: 0;
+        }
+        a{
+            color: $black;
+            transition: 0.4s;
+            &:hover{
+                color: var(--secondary-color-hex);
+            }
+        }
+    }
+   
+    
+}

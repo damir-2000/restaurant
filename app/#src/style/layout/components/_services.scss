@@ -1,0 +1,378 @@
+.services{
+    padding: 145px 0 0;
+    
+    @include respond(tablet){
+        padding: 60px 0 0;
+    }
+    &__container{
+        
+    }
+    &__title-wrapper{
+       margin-bottom: 170px;
+       align-items: center;
+       @include respond(tablet){
+           margin-bottom: 30px;
+       }
+    }
+    &__title{
+        padding-top: 25px;
+    }
+    &__sub-title{
+        
+    }
+    
+    &-about{
+        padding: 100px 0;
+        background: url('../images/design/dotted-small.webp');
+        @include respond(tablet){
+            padding: 0px 0 50px;
+        }
+        &__container{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          
+          @include respond(notebook){
+              justify-content: center;
+          }
+        }
+        &__col-left{
+            
+            width: 53.33333333%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include respond(desktop){
+                width: 53.57142857%;
+            }
+            @include respond(notebook){
+                width:  100%;
+            }
+            &-wrapper{
+                width: 100%;
+                padding-top: 43.18181818%;
+                position: relative;
+                
+                @include respond(notebook){
+                    margin-bottom: 30px;
+                    padding-top: 53%;
+                }
+                @include media(450px){
+                    margin-bottom: 15px;
+                }
+                &-content{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                }
+            }
+            
+            
+        }
+        &__col-right{
+            
+            
+            width: 40.60606061%;
+            
+            @include respond(desktop){
+                width: 41.07142857%;
+            }
+            @include respond(notebook){
+                width:  90%;
+            }
+            
+            &-wrapper{
+                width: 100%;
+                position: relative;
+                padding-top: 113.4328358%;
+                
+                @include respond(notebook){
+                    padding-top: 119.5652174%;
+                }
+                &-content{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    // padding: 160px 0 110px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background: $peach;
+                }
+            }
+            .services-about__title, .services-about__text{
+                @include media(450px){
+                    width: 200px;
+                    text-align: center;
+                }
+            }
+            
+            
+        }
+        
+        
+        
+        &__block{
+            
+            width: 44.31818182%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $peach;
+            height: 100%;
+            
+            @include respond(desktop){
+                width: 45%;
+            }
+            @include respond(notebook){
+                width: 53%;
+            }
+            
+            
+            &-icon-small{
+                font-size: 150px;
+                color: var(--main-color-hex);
+                @include respond(desktop){
+                    font-size: 130px;
+                }
+                @include respond(notebook){
+                    font-size: 190px;
+                }
+                @include respond(tablet){
+                    font-size: 170px;
+                }
+                @include respond(mobile){
+                    font-size: 150px;
+                }
+                @include media(450px){
+                    font-size: 95px;
+                }
+            }
+        }
+        
+        &__icon{
+            font-size: 242px;
+            color: var(--main-color-hex);
+            margin-bottom: 90px;
+            @include respond(desktop){
+                font-size: 200px;
+                margin-bottom: 60px;
+            }
+            @include respond(notebook){
+                font-size: 240px;
+                margin-bottom: 90px;
+            }
+            @include respond(tablet){
+                font-size: 220px;
+                margin-bottom: 60px;
+            }
+            @include respond(mobile){
+                font-size: 180px;
+                margin-bottom: 30px;
+            }
+            @include media(450px){
+                font-size: 120px;
+                margin-bottom: 20px;
+            }
+        }
+        &__info{
+            
+            width: 44.31818182%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100%;
+            @include respond(desktop){
+                width: 45%;
+            }
+            @include respond(notebook){
+                width: 45%;
+            }
+        }
+        &__table-info{
+            width: 44.31818182%;
+            align-items: center;
+            @include respond(desktop){
+                width: 45%;
+            }
+            @include respond(notebook){
+                width: 45%;
+                align-items: flex-end;
+            }
+        }
+        &__title{
+            width: 232px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            text-transform: capitalize;
+            color: $blue;
+            position: relative;
+            @include media(450px){
+                font-size: 15px;
+                line-height: 18px;
+                width: 130px;
+                margin-bottom: 10px;
+            }
+            &-food-line, &-table-line{
+                display: inline-block;
+                width: 84px;
+                height: 3px;
+                background: var(--main-color-hex);
+                position: absolute;
+                @include media(450px){
+                    width: 50px;
+                    height: 2px;
+                }
+            }
+            &-food-arrow, &-table-arrow{
+                position: absolute;
+                display: inline-block;
+                width: 267px;
+                height: 2px;
+                background: var(--main-color-hex);
+                border-radius: 2px;
+                @include media(450px){
+                    display: none;
+                }
+                &::before, &::after{
+                    content: '';
+                    position: absolute;
+                    right: -3px;
+                    width: 12px;
+                    height: 2px;
+                    background: var(--main-color-hex);
+                    border-radius: 2px;
+                }
+                &::before{
+                   transform: rotate(45deg);
+                   bottom: 4px;
+                }
+                &::after{
+                    transform: rotate(-45deg);
+                    top: 4px;
+                }
+            
+            }   
+
+            &-food{
+                width: 160px;
+                text-align: right;
+                position: relative;
+                @include media(450px){
+                    width: 105px;
+                }
+                &-line{
+                    left: 5px;
+                    top: 70%;
+                }
+                &-arrow{
+                    top: 70%;
+                    left: 180px;
+                    width: 330px;
+                    @include media(1450px){
+                        width: 250px;
+                    }
+                    @include media(1300px){
+                        width: 210px;
+                    }
+                    @include respond(desktop){
+                        width: 150px;
+                    }
+                    @include respond(notebook){
+                        width: 250px;
+                    }
+                    @include respond(tablet){
+                        width: 160px;
+                    }
+                    @include media(600px){
+                        width: 120px;
+                    }
+                    @include respond(mobile){
+                        width: 80px;
+                    }
+                }
+                
+            }
+            &-table{
+                position: relative;
+                width: 200px;
+                &-line{
+                    right: 5px;
+                    top: 75%;
+                }
+                &-arrow{
+                    top: 75%;
+                    right: 220px;
+                    transform: rotate(180deg);
+                    width: 190px;
+                    @include media(1450px){
+                        width: 150px;
+                    }
+                    @include media(1300px){
+                        width: 120px;
+                    }
+                    @include respond(desktop){
+                        width: 90px;
+                    }
+                    @include respond(notebook){
+                        width: 210px;
+                    }
+                    @include respond(tablet){
+                        width: 120px;
+                    }
+                    @include media(600px){
+                        width: 90px;
+                    }
+                    @include respond(mobile){
+                        width: 50px;
+                    }
+                }
+            }
+            
+        }
+        &__text{
+            width: 200px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: $gray;
+            @include media(450px){
+                width: 130px;
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+        &__line{
+            width: 192px;
+            height: 3px;
+            background: var(--main-color-hex);
+            @include media(450px){
+                height: 2px;
+                width: 150px;
+            }
+        }
+        
+        
+        
+        
+    }
+    
+    
+    
+}
+
+
+

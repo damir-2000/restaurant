@@ -1,0 +1,123 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?1qijpo') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?1qijpo') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?1qijpo##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-line-right {
+  &:before {
+    content: $icon-arrow-line-right; 
+  }
+}
+.icon-arrow-line-left {
+  &:before {
+    content: $icon-arrow-line-left; 
+  }
+}
+.icon-arrow-bottom {
+  &:before {
+    content: $icon-arrow-bottom; 
+  }
+}
+.icon-Behance {
+  &:before {
+    content: $icon-Behance; 
+  }
+}
+.icon-carousel-left {
+  &:before {
+    content: $icon-carousel-left; 
+  }
+}
+.icon-carousel-right {
+  &:before {
+    content: $icon-carousel-right; 
+  }
+}
+.icon-chevron-right {
+  &:before {
+    content: $icon-chevron-right; 
+  }
+}
+.icon-delivery {
+  &:before {
+    content: $icon-delivery; 
+  }
+}
+.icon-eat {
+  &:before {
+    content: $icon-eat; 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-Linkedin {
+  &:before {
+    content: $icon-Linkedin; 
+  }
+}
+.icon-map-marker {
+  &:before {
+    content: $icon-map-marker; 
+  }
+}
+.icon-plate {
+  &:before {
+    content: $icon-plate; 
+  }
+}
+.icon-play-market {
+  &:before {
+    content: $icon-play-market; 
+  }
+}
+.icon-triangle {
+  &:before {
+    content: $icon-triangle; 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter; 
+  }
+}
+.icon-user {
+  &:before {
+    content: $icon-user; 
+  }
+}
+.icon-app-store {
+  &:before {
+    content: $icon-app-store; 
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right; 
+  }
+}
+

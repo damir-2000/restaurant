@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+const imgs = document.getElementsByTagName('img');
+for(let i = 0; i < imgs.length; i++ ) {
+    imgs[i].setAttribute("ondragstart", "return false")
+}
 document.querySelector('.nav__burger').addEventListener('click', function () {
     this.classList.toggle('nav__burger_active');
     document.querySelector('.nav__sidebar-wrapper').classList.toggle('nav__sidebar-wrapper_active');

@@ -7,7 +7,7 @@ if ($.dev) $.gulp.series($.gulp.parallel('css', 'html', 'js', 'img', 'font', 'ic
 else{
     $.gulp.src($.path.serverDir, {read: false})
         .pipe($.GP.clean({force: true}))
-        .pipe($.gulp.dest('./app/')
+        .pipe($.gulp.dest('../app/')
                 .on('end', $.gulp.series($.gulp.parallel('css', 'html', 'js', 'img', 'font', 'iconFont'))))    
 
 }
